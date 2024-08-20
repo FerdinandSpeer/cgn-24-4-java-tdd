@@ -12,7 +12,20 @@ public class PlayerCharacter {
  * 6. Movement right auf Key D festlegen
  */
 
-public static int getX() {
-    return 0;}
+    public static int getX() {
+        return 0;
+    }
+
+    public static int getY() {
+        return 0;
+    }
+
+    public static int move(String w) {
+        if (w.equals("W")) {
+            return 1;
+        }else {
+            return 0;
+        }
+    }
 
 }
