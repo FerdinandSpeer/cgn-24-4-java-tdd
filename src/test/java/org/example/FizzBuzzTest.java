@@ -16,7 +16,7 @@ class FizzBuzzTest {
         assertEquals(expected, actual);
     }
     @Test
-    void play_shouldReturn1_CalledWith1(){
+    void play_shouldReturn4_CalledWith4(){
         //GIVEN
         int number = 4;
         String expected = "4";
@@ -68,4 +68,49 @@ class FizzBuzzTest {
         //THEN
         assertEquals(expected, actual);
     }
+
+    @Test
+    void play_shouldReturnFizzBuzz_CalledWith15(){
+        //GIVEN
+        int number = 15;
+        String expected = "FizzBuzz";
+        //WHEN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizzBuzz_CalledWith0(){
+        //GIVEN
+        int number = 0;
+        String expected = "FizzBuzz";
+        //WHEN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizzBuzz_CalledWithMinus1(){
+        //GIVEN
+        int number = -1;
+        String expected = "-1";
+        //WHEN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    void play_shouldReturnFizzBuzz_CalledWithMinus15(){
+        //GIVEN
+        int number = -15;
+        String expected = "FizzBuzz";
+        //WHEN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
+
 }
