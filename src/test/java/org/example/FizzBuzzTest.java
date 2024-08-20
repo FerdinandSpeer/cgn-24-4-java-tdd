@@ -25,4 +25,15 @@ class FizzBuzzTest {
         //THEN
         assertEquals(expected, actual);
     }
+
+    @Test
+    void play_shouldReturnFizz_CalledWith3(){
+        //GIVEN
+        int number = 3;
+        String expected = "Fizz";
+        //WHEN
+        String actual = FizzBuzz.play(number);
+        //THEN
+        assertEquals(expected, actual);
+    }
 }
