@@ -23,7 +23,7 @@ public class PlayerCharacter {
     public static int move(String w) {
         if (w.equals("W")) {
             return 1;
-        }else {
+        }else{
             return 0;
         }
     }
